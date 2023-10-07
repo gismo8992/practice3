@@ -26,7 +26,7 @@ void ReleaseArray(int[] array) {
 Console.Clear();
 Console.Write("How many elemets: ");
 int n = Convert.ToInt32(Console.ReadLine());
-int[] array = new int[];
+int[] array = new int[n];
 InputArray(array);
 Console.WriteLine($"[{string.Join(", ", array)}]");
 ReleaseArray(array);
