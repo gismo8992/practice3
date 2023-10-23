@@ -24,8 +24,14 @@ FillArray(table);
 PrintArray(table);
 Console.WriteLine();
 
-int Factoral (int n) {
+int Factorial (int n) {
     if (n == 1) return 1;
-    else return n*Factoral(n-1);
+    else return n*Factorial(n-1);
 }
-Console.WriteLine(Factoral(4));
+Console.WriteLine(Factorial(4));
+
+int Fibonachi(int n) {
+    if(n == 1 || n == 2) return 1;
+    else return Fibonachi(n-1) + Fibonachi(n-2);
+}
+Console.WriteLine(Fibonachi(7));
